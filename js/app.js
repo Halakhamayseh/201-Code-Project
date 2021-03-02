@@ -38,3 +38,22 @@ if (qusetions5==='yes'|qusetions5==='y') {
 let userName = prompt('can you tell me your name?');
 alert ('Welcome ' + userName);
 alert ('Thank you' + userName +' for your time');
+let userAge = prompt('can you tell me your age?');
+let qusetions6 = prompt ('sixth qusetion: What is the result of my age + your age?');
+let result = userAge + 25
+let opportunities = 4
+switch (result) {
+    case qusetions6 = result:alert ('correct it is ' + result);
+}
+do {
+    switch (result) {
+        case qusetions6 != result:prompt ('you can try again')
+            break;
+    
+        default: alert('you just add number')
+            break;
+    }
+    opportunities-=1;
+    console.log(opportunities)
+} while (opportunities>0);
+

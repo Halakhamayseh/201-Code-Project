@@ -63,13 +63,16 @@ do {
     opportunities-=1;
     alert('the true result is' + result);
 } while (opportunities>0);*/
+let myDateAge=5;
+let count =0;
 while (opportunities<=4) { prompt(qusetions6);
-    if (qusetions61 == result) {alert('welldone' + result);  
-    prompt(qusetions6);
+    if (parseInt(qusetions6) === myDateAge) {alert('welldone'); 
+    count++; 
+  
     }
-    else if (qusetions61 > result) {alert('too high');
+    else if (qusetions6 > myDateAge) {alert('too high');
         
-    }else if (qusetions61 < result){alert('too low');
+    }else if (qusetions6 < myDateAge){alert('too low');
     } else {
         alert('you can use just number');
     }
@@ -84,8 +87,7 @@ for (let i = 0; i < 6; i++) {
     count++;
     } else(qusetions7!='dark'||'pink'||'yellow'){ alert('thank you');
     alert (qusetions7answer)  
-    }
-    
-}
+    }  
+} alert(count)
 
 

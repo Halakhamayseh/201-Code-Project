@@ -106,5 +106,5 @@ alert('try again'+hint);
 opportunities+=1;
 qusetions7 = prompt ('seventh qusetion: What are My favorite colors ?');
 }
-alert(count /'out/7');
+alert(count +'out/7');
 

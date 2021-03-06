@@ -8,3 +8,13 @@ li{
     color: blue;
     font-family: cursive;
 }
+img {
+    float: right;
+    height: 250px;
+    width: 250px;
+  }
+  h2{
+      border: 0px;color: pink;
+      padding: 0px;
+      position: relative;
+  }

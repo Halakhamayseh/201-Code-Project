@@ -1,9 +1,12 @@
 'use strict';
+let userName=prompt('plz provided your name:');
+alert('welcome to my website ' +userName);
+confirm('can you plz answer some qusetion and thank you for your time');
 let count =0;
 function guess(answerUserInput) {
   if (answerUserInput==='yes'|answerUserInput==='y') {
     console.log ('Correct');
-    alert ('correct '  +  x);
+    alert ('correct ' + x);
     count++;
   }else if (answerUserInput==='no'|answerUserInput==='n') {
     console.log ('wrong');
@@ -29,31 +32,29 @@ x = '25';
 guess(qusetions4);
 let qusetions5 = prompt ('fifth qusetion: Is my name spalling (h-a-l-a)?').toLowerCase();
 guess(qusetions5);
-let opportunities =0;
+/*q6*/
+//===================================================================
 let myBornMonth=5;
-let qusetions6 = parseInt(prompt ('sixth qusetion: gusess my birth month?'));
-
-function birthMonth(mon){
+let opportunities=0;
+let qusetions6 = prompt ('sixth qusetion: gusess my born moth?');
+function birthMonth(qusetions6){
   while (opportunities<=2) {
-    if(mon===myBornMonth) {
-      alert('welldone');
+    if (parseInt(qusetions6) === myBornMonth) {alert('welldone');
       count++;
       console.log(count);
       break;
-    }else if (mon > myBornMonth) {
-      alert('too high');
+    }else if (parseInt (qusetions6) > myBornMonth) {alert('too high');
       opportunities+=1;
-      console.log(opportunities);
-      mon=prompt('sixth qusetion: gusess my born moth?');
-    }else if (mon < myBornMonth){
-      alert('too low');
-      opportunities+=1; 
       console.log(opportunities);
       qusetions6=prompt('sixth qusetion: gusess my born moth?');
-    }else {
+    }else if (parseInt (qusetions6) < myBornMonth){alert('too low');
+      opportunities+=1;
+      console.log(opportunities);
+      qusetions6=prompt('sixth qusetion: gusess my born moth?');
+    } else {
       alert('you can use just number');
       opportunities+=1;
-      mon=prompt('sixth qusetion: gusess my born moth?');
+      qusetions6=prompt('sixth qusetion: gusess my born moth?');
       console.log(opportunities);
     }
   }
@@ -85,4 +86,4 @@ function faviroteColor(rose){
   }while (opportunities<5);
 }
 faviroteColor(qusetions7);
-alert(count +' out of 7')
+alert(count +' out of 7');
